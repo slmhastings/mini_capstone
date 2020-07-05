@@ -12,6 +12,13 @@ class Api::ProductsController < ApplicationController
   end
 
   def create
+    @recipe = Product.new(
+      name: params[:name],
+      price: params[:price],
+      image_url: params[:image_url],
+      description: params[:description]
+    )
+    @recipe.save
     render 'create.json.jb'
   end
 
@@ -20,7 +27,14 @@ class Api::ProductsController < ApplicationController
     @product.name = params[:name]
     @product.price = params[:price]
     @product.image_url = params[:image_url]
-    @product.description = params[:name]
+    @product.description = params[:description]
+    @product.save
     render 'update.json.jb'
+  end
+
+  def destroy
+    @product = Product.find_by(id: params[:id])
+    @product.destroy
+    render json: {message: "Product succesfully deleted!"}
   end
 end
