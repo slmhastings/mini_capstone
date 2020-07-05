@@ -19,7 +19,7 @@ class Api::ProductsController < ApplicationController
       description: params[:description]
     )
     @recipe.save
-    render 'create.json.jb'
+    render 'show.json.jb'
   end
 
   def update
@@ -29,7 +29,7 @@ class Api::ProductsController < ApplicationController
     @product.image_url = params[:image_url]
     @product.description = params[:description]
     @product.save
-    render 'update.json.jb'
+    render 'show.json.jb'
   end
 
   def destroy
