@@ -1,0 +1,4 @@
+{
+  message: "heya"
+  id: @product.id
+}

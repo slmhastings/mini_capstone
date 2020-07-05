@@ -1,6 +1,6 @@
 @products.map do |product|
   {
-    message: "hello",
+    
     id: product.id,
     name: product.name,
     price: product.price,
