@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Product.create!([
+  {name: "shorts", price: "15.0", image_url: "https://www.shopakira.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/d/n/dn001sh-1_black_1_1.jpg", description: "rhinestone studded shorts", in_stock: nil},
+  {name: "t-shirt", price: "20.0", image_url: "https://static1.funidelia.com/425764-f6_big2/marvel-color-logo-t-shirt-for-men.jpg", description: "marvel crew neck", in_stock: nil},
+  {name: "Showstopper Jeans", price: "24.0", image_url: "https://cdn.shopify.com/s/files/1/0115/6254/9306/products/High-Waist-Jeans-Women-Streetwear-Bandage-Denim-Plus-Size-Jeans-Femme-Pencil-Pants-Skinny-Jeans-Woman_3_2000x.jpg?v=1558195659", description: "High waist denim jeans with belt", in_stock: nil},
+  {name: "Button Down Blouse", price: "18.0", image_url: "https://images-na.ssl-images-amazon.com/images/I/61AFNIS8zgL._AC_UY445_.jpg", description: "black blouse with buttons and half rolled sleeves", in_stock: nil},
+  {name: "Gala Dress", price: "200.0", image_url: "https://media.thereformation.com/image/upload/q_auto/c_scale,w_auto:breakpoints_100_2560_9_20:520/v1/prod/product_images/gala-dress/blush/5e17ccc8d59b66001a83110e/original.jpg", description: "The Gala is slim fitting in the bodice with a relaxed fitting skirt.", in_stock: nil},
+  {name: "Gala Dress", price: "200.0", image_url: "https://media.thereformation.com/image/upload/q_auto/c_scale,w_auto:breakpoints_100_2560_9_20:520/v1/prod/product_images/gala-dress/blush/5e17ccc8d59b66001a83110e/original.jpg", description: "The Gala is slim fitting in the bodice with a relaxed fitting skirt.", in_stock: nil}
+])
